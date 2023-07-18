@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>HelloRailsReact</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,7 +11,25 @@
   </head>
 
   <body>
-    # <%= yield %>
     <div id="app"></div>
+
+    <script>
+      // Import the Redux store from your React app
+      import store from '../store/store';
+      // Provide the store to your React app
+      import { Provider } from 'react-redux';
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+      import App from '../components/App';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        ReactDOM.render(
+          <Provider store={store}>
+            <App />
+          </Provider>,
+          document.getElementById('app')
+        );
+      });
+    </script>
   </body>
 </html>
