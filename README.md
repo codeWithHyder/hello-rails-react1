@@ -153,8 +153,7 @@ If you like this project give a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+i would be thankful to Microverse for reposing trust in me and  giving a chance to learn the fullstack web development with multiple tech stacks ;
 
 
 
